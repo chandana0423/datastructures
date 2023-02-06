@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+ int n,i,a,b,temp;
+ printf("enter how many digits u want:");
+ scanf("%d",&n);
+ printf("enter the values of a and b:");
+ scanf("%d%d",&a,&b);
+ printf("%d %d",a,b);
+ for(i=3;i<=n;i++)
+ {
+  temp=a+b;
+  printf(" %d ",temp);
+  a=b;
+  b=temp;	
+ }
+}
+
+  
