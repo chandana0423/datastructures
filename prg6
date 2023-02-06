@@ -1,0 +1,30 @@
+include<stdio.h>
+#i#nclude<conio.h>
+int main()
+{
+ int flag=0,key;
+ int i,n;
+ char a[10];
+ printf("enter the no of elements in array:");
+ scanf("%d",&n);
+ printf("enter array elements:");
+ for(i=0;i<n;i++)
+ {
+  scanf("%d",&a[i]);
+ }
+ printf("enter the key value:");
+ scanf("%d",&key);
+ for(i=0;i<n;i++)
+ {
+  if(a[i]==key)
+  {
+  	flag=1;
+  	break;
+  }
+}
+  if(flag==1)
+  	printf("the element is present in %dth index",i);
+  else
+    printf("the element is not present in array");
+}
+ 
