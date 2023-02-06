@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+  int A[34],i,n,odd=0,even=0;
+  //printf("enter the numbers of elements in array:");
+  scanf("%d",&n);
+  for(i=0;i<n;i++)
+  {
+   //	printf("enter the %dth element:",&i);
+  	scanf("%d",&A[i]);
+  }
+  for(i=0;i<n;i++)
+   {
+   	if(A[i]%2==1)
+   	odd++;
+   	else
+   	even++;
+   }
+ printf(" odd=%d\n",odd);
+ printf(" even=%d",even);
+ return 0;    
+}
