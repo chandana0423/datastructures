@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+  int x=0,key,i,n,ind;
+   int h[89];
+ printf("enter the size of hash table::");
+ scanf("%d",&n);
+ for(i=0;i<n;i++)
+ {
+   h[i]==-1;
+ }
+ for(i=0;i<n;i++)
+ {
+   x=0;
+  do{
+  ind=((key%n)+x)%n;
+  if(h[ind]=-1)
+   h[ind]=key;
+  else
+   x++;
+  
+ }
+ while(h[ind]!=-1);
+}
+for(i=0;i<n;i++)
+  printf("%d -> %d",i,h[i]);
+}
